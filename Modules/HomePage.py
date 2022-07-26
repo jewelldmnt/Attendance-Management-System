@@ -11,10 +11,10 @@ class HomePage(Frame):
 
         # background image
         self.background_img = PhotoImage(file="Assets/bg_hp.png")
-        canvas.create_image(595.0, 387.0, image=self.background_img)
+        canvas.create_image(595.0, 340.0, image=self.background_img)
 
         # getting started button
         self.btn_start = PhotoImage(file="Assets/btn_start.png")
         btn_start = Button(canvas, image=self.btn_start, borderwidth=0, highlightthickness=0, 
                         command=lambda: controller.show_frame("SignInPage"), relief="flat")
-        btn_start.place(x=101.0, y=422.0, width=194.0, height=64.0)
+        btn_start.place(x=270, y=448, width=194.0, height=64.0)
