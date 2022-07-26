@@ -13,6 +13,10 @@ class Mainframe(Tk):
         x = (screen_w/2) - (app_w/2)
         y = (screen_h/2) - (app_h/2)
 
+        # change the icon
+        logo = PhotoImage(file="Assets/logo.png")
+        self.iconphoto(True, logo)
+        
         self.title("Attendance Management Application")
         self.geometry(f"{app_w}x{app_h}+{int(x)}+{int(y)}")
         self.resizable(0, 0)
