@@ -5,6 +5,7 @@ from Modules import SignInPage, HomePage, EmpAttendance, EmpTimeRecord, EmpLeave
 class Mainframe(Tk):
     def __init__(self, *args, **kwargs):
         Tk.__init__(self, *args, **kwargs)
+        # center the app in your screen
         app_w = 1190
         app_h = 680
         screen_w = self.winfo_screenwidth()
@@ -31,7 +32,7 @@ class Mainframe(Tk):
             page = f(mainframe, self)
             page.grid(row=0, column=0, sticky="NSEW")
             self.frames[page_name] = page
-        self.show_frame("SignInPage")
+        self.show_frame("HomePage")
 
 
     # for calling the frames
