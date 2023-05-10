@@ -30,8 +30,9 @@ class SignInPage(Frame):
         self.var_email = StringVar()
         self.var_email.trace("w", self.reset_email_error)
         self.entry_email = CTkEntry(self, textvariable=self.var_email, text_color="Black", border_width=1, 
-                            border_color="#DDE8EA", fg_color="#DDE8EA", bg_color="#26408B", corner_radius=20)
-        self.entry_email.place(x=445.0, y=357.0, width=300.0, height=45.0)
+                            border_color="#DDE8EA", fg_color="#DDE8EA", bg_color="#26408B", corner_radius=20, 
+                            width=300.0, height=45.0)
+        self.entry_email.place(x=445.0, y=357.0)
         self.error_email = Label(self, text="", font=("LexendDeca", -12), fg="#FF2F36", bg="#26408B")
         self.error_email.place(x=456, y=407, height=9)
 
@@ -39,8 +40,9 @@ class SignInPage(Frame):
         self.var_password = StringVar()
         self.var_password.trace("w", self.reset_password_error) 
         self.entry_password = CTkEntry(self, textvariable=self.var_password, show="*", text_color="Black", border_width=1, 
-                            border_color="#DDE8EA", fg_color="#DDE8EA", bg_color="#26408B", corner_radius=20)
-        self.entry_password.place(x=445.0, y=460.0, width=300.0, height=45.0)
+                            border_color="#DDE8EA", fg_color="#DDE8EA", bg_color="#26408B", corner_radius=20, 
+                            width=300.0, height=45.0)
+        self.entry_password.place(x=445.0, y=460.0)
         self.error_password = Label(self, text="", font=("LexendDeca", -12), fg="#FF2F36", bg="#26408B")
         self.error_password.place(x=456, y=510, height=9)
 

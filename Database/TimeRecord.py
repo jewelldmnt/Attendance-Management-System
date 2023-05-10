@@ -44,25 +44,25 @@ def create_record_info(frame, id) -> None:
             tardiness = overtime = undertime = "00:00"
 
         # make all the label boxes of the table
-        date_box = CTkLabel(frame, text=sdt, text_font=("Montserrat Regular", -16), text_color="#101B3A",
+        date_box = CTkLabel(frame, text=sdt, font=("Montserrat Regular", -16), text_color="#101B3A",
                         fg_color="#D1D5E7", bg_color="#F5F5F5", width=170, height=51)
         date_box.grid(row=d, column=0, padx=(0, 6), pady=(0, 5))
-        work_sched_box = CTkLabel(frame, text=worksched, text_font=("Montserrat Regular", -16), text_color="#101B3A",
+        work_sched_box = CTkLabel(frame, text=worksched, font=("Montserrat Regular", -16), text_color="#101B3A",
                         fg_color="#D1D5E7", bg_color="#F5F5F5", width=170, height=51)
         work_sched_box.grid(row=d, column=1, padx=(0, 6), pady=(0, 5))
-        timein_box = CTkLabel(frame, text=timein, text_font=("Montserrat Regular", -16), text_color="#101B3A",
+        timein_box = CTkLabel(frame, text=timein, font=("Montserrat Regular", -16), text_color="#101B3A",
                         fg_color="#D1D5E7", bg_color="#F5F5F5", width=126, height=51)
         timein_box.grid(row=d, column=2, padx=(0, 5), pady=(0, 5))
-        timeout_box = CTkLabel(frame, text=timeout, text_font=("Montserrat Regular", -16), text_color="#101B3A",
+        timeout_box = CTkLabel(frame, text=timeout, font=("Montserrat Regular", -16), text_color="#101B3A",
                         fg_color="#D1D5E7", bg_color="#F5F5F5", width=126, height=51)
         timeout_box.grid(row=d, column=3, padx=(0, 6), pady=(0, 5))
-        tardiness_box = CTkLabel(frame, text=tardiness, text_font=("Montserrat Regular", -16), text_color="#101B3A",
+        tardiness_box = CTkLabel(frame, text=tardiness, font=("Montserrat Regular", -16), text_color="#101B3A",
                         fg_color="#D1D5E7", bg_color="#F5F5F5", width=126, height=51)
         tardiness_box.grid(row=d, column=4, padx=(0, 5), pady=(0, 5))
-        overtime_box = CTkLabel(frame, text=overtime, text_font=("Montserrat Regular", -16), text_color="#101B3A",
+        overtime_box = CTkLabel(frame, text=overtime, font=("Montserrat Regular", -16), text_color="#101B3A",
                         fg_color="#D1D5E7", bg_color="#F5F5F5", width=126, height=51)
         overtime_box.grid(row=d, column=5, padx=(0, 6), pady=(0, 5))
-        undertime_box = CTkLabel(frame, text=undertime, text_font=("Montserrat Regular", -16), text_color="#101B3A",
+        undertime_box = CTkLabel(frame, text=undertime, font=("Montserrat Regular", -16), text_color="#101B3A",
                         fg_color="#D1D5E7", bg_color="#F5F5F5", width=126, height=51)
         undertime_box.grid(row=d, column=6, padx=(0, 5), pady=(0, 5))
         boxes[sdt] = [timeout_box, overtime_box, undertime_box]

@@ -79,27 +79,27 @@ class EmpTimeRecord(MenuFrame.MenuFrame):
 
     # create the classification on the top part
     def create_classification_part(self) -> None:
-        self.label_month = CTkLabel(self.top_part, text="", text_font=("Montserrat Bold", -24), 
+        self.label_month = CTkLabel(self.top_part, text="", font=("Montserrat Bold", -24), 
                                     bg_color="#F5F5F5", fg_color="#26408B", width=1010, height=45)
         self.label_month.grid(row=0, column=0, columnspan=7, pady=8)
-        date = CTkLabel(self.top_part, text="DATE", text_font=("Montserrat Bold", -16), text_color="#101B3A",
+        date = CTkLabel(self.top_part, text="DATE", font=("Montserrat Bold", -16), text_color="#101B3A",
                         fg_color="#A6AFD5", bg_color="#F5F5F5", width=170, height=56)
         date.grid(row=1, column=0)
-        work_sched = CTkLabel(self.top_part, text="WORK SCHED", text_font=("Montserrat Bold", -16), text_color="#101B3A",
+        work_sched = CTkLabel(self.top_part, text="WORK SCHED", font=("Montserrat Bold", -16), text_color="#101B3A",
                         fg_color="#A6AFD5", bg_color="#F5F5F5", width=170, height=56)
         work_sched.grid(row=1, column=1)
-        timein = CTkLabel(self.top_part, text="TIME IN", text_font=("Montserrat Bold", -16), text_color="#101B3A",
+        timein = CTkLabel(self.top_part, text="TIME IN", font=("Montserrat Bold", -16), text_color="#101B3A",
                         fg_color="#A6AFD5", bg_color="#F5F5F5", width=126, height=56)
         timein.grid(row=1, column=2)
-        timeout = CTkLabel(self.top_part, text="TIME OUT", text_font=("Montserrat Bold", -16), text_color="#101B3A",
+        timeout = CTkLabel(self.top_part, text="TIME OUT", font=("Montserrat Bold", -16), text_color="#101B3A",
                         fg_color="#A6AFD5", bg_color="#F5F5F5", width=126, height=56)
         timeout.grid(row=1, column=3)
-        tardiness = CTkLabel(self.top_part, text="TARDINESS", text_font=("Montserrat Bold", -16), text_color="#101B3A",
+        tardiness = CTkLabel(self.top_part, text="TARDINESS", font=("Montserrat Bold", -16), text_color="#101B3A",
                         fg_color="#A6AFD5", bg_color="#F5F5F5", width=126, height=56)
         tardiness.grid(row=1, column=4)
-        overtime = CTkLabel(self.top_part, text="OVERTIME", text_font=("Montserrat Bold", -16), text_color="#101B3A",
+        overtime = CTkLabel(self.top_part, text="OVERTIME", font=("Montserrat Bold", -16), text_color="#101B3A",
                         fg_color="#A6AFD5", bg_color="#F5F5F5", width=126, height=56)
         overtime.grid(row=1, column=5)
-        undertime = CTkLabel(self.top_part, text="UNDERTIME", text_font=("Montserrat Bold", -16), text_color="#101B3A",
+        undertime = CTkLabel(self.top_part, text="UNDERTIME", font=("Montserrat Bold", -16), text_color="#101B3A",
                         fg_color="#A6AFD5", bg_color="#F5F5F5", width=126, height=56)
         undertime.grid(row=1, column=6)
